@@ -15,6 +15,9 @@ export const usePayment = () => {
   return context;
 };
 
+// Export alias for compatibility
+export const usePaymentContext = usePayment;
+
 export const PaymentProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
